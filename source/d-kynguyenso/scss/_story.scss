@@ -1,0 +1,243 @@
+// ====================================
+// Story's style
+// ====================================
+/*
+* TOC
+*
+* FRAMEWORK-ZONE ====================
+* no image in article
+* normal story
+* story type
+* SITE STORY GLOBAL ====================
+*/
+// > FRAMEWORK-ZONE ====================
+// > no image in article
+.no-img {
+    .story__thumb a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $gray-200;
+        border: 1px solid $gray-300;
+        text-transform: uppercase;
+        color: $gray-900;
+        font-size: 1rem;
+
+        &:after {
+            content: 'Không có ảnh' !important;
+        }
+
+        img {
+            display: none;
+        }
+    }
+}
+
+// > normal story
+.story {
+    @include clearfix;
+
+    &__thumb {
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 0;
+
+        img {
+            text-indent: -9999px;
+        }
+    }
+
+    &__heading {
+        a {
+            display: block;
+        }
+
+        a:visited {
+            // color: $gray-500;
+        }
+    }
+
+    &__meta {
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        @include clearfix();
+
+        >* {
+            &:first-child {}
+        }
+
+        a {
+            display: flex;
+        }
+    }
+
+    &__summary {}
+
+    &:hover {}
+
+    &:focus {}
+}
+
+@-webkit-keyframes animation-blink {
+
+    0%,
+    49% {
+        background-color: rgba(255, 0, 0, .7)
+    }
+
+    100%,
+    50% {
+        background-color: rgba(255, 0, 0, .4)
+    }
+}
+
+// > SITE STORY GLOBAL ====================
+// EDITABLE 
+.story {
+    @include clearfix;
+
+    &__thumb {
+        a {
+            // display: flex;
+            width: 100%;
+            height: 100%;
+            transition: transform .5s ease-out .1s;
+        }
+
+        img {
+            width: 100%;
+            // height: 100%;
+            object-fit: cover;
+        }
+
+        &:hover {
+            overflow: hidden;
+
+            a {
+                -webkit-transform: scale($rate-zoom);
+                /* Safari and Chrome */
+                -moz-transform: scale($rate-zoom);
+                /* Firefox */
+                -ms-transform: scale($rate-zoom);
+                /* IE 9 */
+                -o-transform: scale($rate-zoom);
+                /* Opera */
+                transform: scale($rate-zoom);
+            }
+        }
+    }
+
+    &__heading {
+        a {}
+
+        i {
+            margin-left: $spacer-0;
+        }
+
+        &:hover {
+            a {}
+
+            a:after {}
+        }
+    }
+
+    &__meta {
+        a {
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+
+
+    &:focus {
+        background-color: rgba($primary, .1);
+    }
+}
+
+// story refer - OPTION
+.story__refer {
+    margin-top: $spacer-3;
+    display: flex;
+    flex-direction: column;
+
+    .refer {
+        margin-top: $spacer-2;
+        display: flex;
+        flex-direction: column;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &__heading {
+            @include font-style(14, 20, normal);
+            padding-left: 12px;
+            position: relative;
+
+            &:before {
+                content: '';
+                width: 3px;
+                height: 3px;
+                background-color: $gray-800;
+                position: absolute;
+                top: 8px;
+                left: 0;
+                transition: all .2s ease-in-out;
+            }
+
+            a {
+                color: $gray-800;
+
+                &:hover {
+                    color: $secondary;
+                }
+            }
+        }
+
+        &:hover {
+            .refer__heading:before {
+                color: $secondary;
+            }
+        }
+    }
+}
+
+// >> story direction 
+// verticle 
+@mixin story-verticle {
+    .story {
+
+        &__heading,
+        &__meta,
+        &__summary,
+        &__refer {
+            margin-top: $spacer-1;
+        }
+    }
+}
+
+// thumb left
+@mixin story-left {
+    &__thumb {
+        margin-right: $spacer-2;
+        float: left;
+    }
+
+    &__meta,
+    &__summary,
+    &__refer {
+        margin-top: $spacer-1;
+    }
+}
+
+// thumb right
+@mixin story-right {
+    &__thumb {
+        margin-left: $spacer-2;
+        float: right;
+    }
+}

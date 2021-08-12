@@ -1,0 +1,224 @@
+// ==================================================================
+// =======================style global===============================
+// ==================================================================
+body {
+  a {
+    font-size: 14px;
+    font-weight: 800;
+
+    &:hover {
+      color: #f04e46;
+    }
+  }
+}
+
+// slick prev, next
+.slick-next,
+.slick-prev {
+  width: 20px;
+  height: 32px;
+  display: block;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+.slick-prev {
+  background: url(../img/left.png) no-repeat;
+  left: 20px;
+  z-index: 1;
+}
+
+.slick-next {
+  background: url(../img/right.png) no-repeat;
+  right: 20px;
+}
+
+
+// ==================================================================
+// ======================= home page ===============================
+// ==================================================================
+.box-highlight {
+  .rank-1 {
+    .story {
+      position: relative;
+
+      &__heading {
+        background: rgba(0, 0, 0, 0.5);
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 10px 20px;
+        color: #fff;
+        position: absolute;
+        padding: 10px 20px;
+      }
+
+      .cms-link {
+        font-size: 18px;
+        margin-bottom: 5px;
+        color: white;
+        font-weight: normal;
+      }
+
+      .summary {
+        font-size: 14px;
+        font-weight: normal;
+      }
+    }
+  }
+
+  .nav-tab {
+    overflow: hidden;
+    height: 322px;
+    border: 1px solid #ddd;
+    padding: 0 20px;
+    margin-bottom: 10px;
+
+    &__link {
+      display: flex;
+      justify-content: center;
+
+      a {
+        border: none;
+        cursor: default;
+        color: #000;
+        padding: 5px 10px;
+        display: block;
+        text-transform: uppercase;
+        margin-right: 2px;
+
+        &:hover {
+          color: #f04e46;
+          background-color: #eeeeee;
+          border-color: #eeeeee #eeeeee #dddddd;
+        }
+
+      }
+
+      .active {
+        background-color: #ffba26;
+
+        &:hover {
+          pointer-events: none;
+          background-color: #ffba26;
+          color: #000;
+        }
+      }
+    }
+
+    &__content {
+      .story {
+        .cms-link {
+          padding: 8px 0;
+          border-top: 1px solid #ddd;
+        }
+      }
+
+      .story:first-child {
+        .cms-link {
+          border-top: 0;
+        }
+      }
+    }
+
+    .tab-pane {
+      display: none;
+
+      &.active {
+        display: block;
+      }
+    }
+  }
+
+}
+
+.box-style-1 {
+  margin-top: 30px;
+
+  .box-heading {
+    cursor: pointer;
+    height: 42px;
+    margin-bottom: 12px;
+    background: url(../img/cat-title.png) no-repeat left top;
+
+    &:hover {
+      background-position: 0 -42px;
+    }
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    line-height: 42px;
+    text-transform: uppercase;
+    font-weight: normal;
+
+    &:hover {
+      color: inherit;
+    }
+
+    img {
+      width: 25px;
+      height: 25px;
+      display: inline;
+      margin: 0 15px 0 10px;
+    }
+  }
+
+  .box-content {
+    .story {
+      &__thumb {
+        height: 167px;
+        width: 270px;
+        float: left;
+        margin-right: 20px;
+      }
+
+      &__heading a {
+        font-weight: normal;
+        font-size: 18px;
+      }
+
+      .meta {
+        padding-top: 5px;
+        display: block;
+        color: #333;
+        font-size: .85em;
+      }
+
+      &__summary {
+        margin-top: 10px;
+        line-height: 1.4em;
+      }
+    }
+
+    .rank-2 {
+      border-left: 1px solid #ddd;
+
+      .story {
+        background: url(../img/icon.png) left 10px no-repeat;
+        border-top: 1px solid #ddd;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 30px;
+
+        a {
+          font-size: 14px;
+          font-weight: 800;
+        }
+      }
+
+      .story:first-child {
+        background: url(../img/icon.png) left 0 no-repeat;
+        padding-top: 0;
+        border-top: 0;
+      }
+    }
+  }
+}
+
+.box-highlight+.box-style-1 {
+  margin-top: 0;
+}

@@ -1,0 +1,93 @@
+// ====================================
+// Story's style
+// ====================================
+/*
+* TOC
+*
+*/
+//
+.site-footer {
+    margin-top: 30px;
+
+    .menu-footer {
+        border: 1px solid #ccc;
+        border-left: none;
+        border-right: none;
+        height: 40px;
+        display: flex;
+        position: relative;
+        box-shadow: 0 4px 2px -2px #8080804d;
+    }
+
+    li {
+        text-transform: uppercase;
+        margin-right: 1px;
+
+        a {
+            font-size: 11px;
+            color: #000;
+            line-height: 40px;
+            padding: 0 10px;
+            font-weight: 800;
+        }
+    }
+
+    .stuff {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        right: 0%;
+        top: 50%;
+        transform: translateY(-50%);
+        border-left: 1px solid #ccc;
+        height: 38px;
+        width: 369px;
+
+        .txtsearch {
+            outline: none;
+            border: none;
+            padding-left: 10px;
+
+            &::placeholder {
+                color: #333333;
+                font-size: 1.3rem;
+                font-family: 'open-sans';
+            }
+        }
+
+        .btnsearch {
+            padding: 8px 10px 8px 0;
+        }
+
+        .rss,
+        .gg,
+        .fb {
+            width: 24px;
+            height: 24px;
+            display: block;
+            padding: 20px 22px;
+            border-left: 1px solid #ccc;
+        }
+
+        .rss {
+            background: url(../img/rss.png) center no-repeat;
+        }
+
+        .gg {
+            background: url(../img/google.png) center no-repeat;
+        }
+
+        .fb {
+            background: url(../img/facebook.png) center no-repeat;
+        }
+    }
+
+    .rank-2 {
+        padding: 10px 0;
+
+        .copyright {
+            font-size: 11px;
+        }
+    }
+}

@@ -1,0 +1,93 @@
+// ====================================
+// Story's style
+// ====================================
+/*
+* TOC
+*
+*/
+.banner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    >[class^="zone-"] {
+        margin-top: $spacer-3;
+
+        &:first-child {
+            @include no-style-top;
+        }
+    }
+
+    &:empty {
+        display: none;
+    }
+    & + &{
+        margin-top: $spacer-3;
+    }
+}
+
+// ads at site's top  
+[data-position="Web_AdsTop"] {
+    margin: $spacer-3 auto 0px;
+    @include clearfix();
+}
+
+// ads at site's body
+[data-position^="Web_AdsMiddle"] {
+    // margin: $spacer-6 auto 0px;
+    @include clearfix();
+}
+
+// ads at sidebar 
+[data-position="Web_AdsRightSticky"] {
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: $spacer-3;
+}
+
+// ads at site's bottom  
+[data-position="Web_AdsBottom"] {
+    margin: 48px auto 0;
+    @include clearfix();
+}
+
+#sidebar-top-1 + #sidebar-sticky-1{
+    margin-top: $spacer-3;
+}
+
+.group-fyi-wrap{
+    margin-top: $spacer-3;
+}
+
+.story-fyi{
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-left: 3px solid #a50a02;
+    display: block;
+    position: relative;
+    margin: 0 auto 10px;
+    padding: 8px;
+    @include clearfix;
+    .thumb{
+        width: 100px;
+        height: 60px;
+        margin-right: 10px;
+        float: left;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .text{
+        color: #3b5998;
+        font-weight: bold;
+        font-size: 14px;
+        display: flex;
+    }
+    span{
+        display: flex;
+        font-size: 11px;
+        color: $gray-500;
+        margin-top: 2px;
+    }
+}

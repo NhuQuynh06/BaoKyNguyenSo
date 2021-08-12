@@ -1,0 +1,42 @@
+{
+  "name": "baomoi-v2",
+  "version": "1.0.0",
+  "description": "this framework for baomoi.com",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tatuan142/baomoi-core.git"
+  },
+  "keywords": [
+    "news",
+    "framework"
+  ],
+  "author": "Trần Anh Tuấn (tatuan142@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tatuan142/baomoi-core/issues"
+  },
+  "homepage": "https://github.com/tatuan142/baomoi-core#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-if": "^3.0.0",
+    "gulp-inject-string": "^1.1.2",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "imagemin": "^7.0.0",
+    "imagemin-jpegtran": "^6.0.0",
+    "imagemin-pngquant": "^8.0.0",
+    "node-sass": "^6.0.0",
+    "yargs": "^14.2.0"
+  }
+}

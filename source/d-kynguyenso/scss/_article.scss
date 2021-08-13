@@ -231,13 +231,6 @@
 /* > normal article*/
 
 .article {
-    // padding-right: $spacer-4;
-    width: 760px;
-    margin: 0 auto;
-
-    @include media-breakpoint-down(lg) {
-        // padding-right: $spacer-4;
-    }
 
     // cms default html 
     table.picture {
@@ -802,12 +795,12 @@
         }
 
         .caption {
-            padding-top: $spacer-1;
-            font-size: 16px;
+            padding-top: 5px;
+            font-size: 14px;
             font-style: italic;
             color: #888888;
-            padding-left: 25px;
-            padding-right: 25px;
+            padding-left: 10px;
+            padding-right: 10px;
 
         }
 
@@ -1705,10 +1698,6 @@
 
 }
 
-.chapter-breadcrumb+.box-heading {
-    width: 660px;
-    margin: 0 auto;
-}
 
 .video-page {
     .article {
@@ -2231,14 +2220,12 @@
         color: $gray-600;
     }
 
-    .text,
-        {
+    .text {
         margin-top: 5px;
     }
 
     .image,
-    .video,
-        {
+    .video {
         text-align: right !important;
         margin-top: $spacer-3;
 
@@ -3220,8 +3207,69 @@
 
 // ============
 // xử lý riệng từng trang, ko copy qua lại
-.article {
-    figure[type="photo"] {
-        margin-top: 20px;
+.section-article {
+    .article-title {
+        font-size: 30px;
+        padding-bottom: 10px;
     }
+
+    .article-meta {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a {
+            margin-right: 5px;
+        }
+
+        .sendprint,
+        .sendmail,
+        .sendsocial {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .article {
+
+        .cms-text {
+            margin-top: 10px;
+        }
+
+        .sapo {
+            font-weight: bold;
+            @include bold();
+        }
+
+        .story {
+            background: #f9f9f9;
+            border-bottom: 1px dotted #e8e8e8;
+            margin-top: 14px;
+            padding-top: 5px;
+
+            &__thumb {
+                width: 170px;
+                height: 123px;
+                margin-right: 12px;
+                float: left;
+            }
+
+            &__heading a {
+                color: rgb(51, 51, 255);
+            }
+        }
+
+        .article__avatar {
+            width: 500px;
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+
+        .cms-author {
+            font-size: 14px;
+            @include bold();
+            text-transform: uppercase;
+        }
+    }
+
 }

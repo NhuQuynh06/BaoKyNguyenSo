@@ -2,6 +2,7 @@
 html {
   font-size: 62.5%;
 }
+
 $body-bg: #fff;
 $body-color: #343a40;
 $font-family-sans-serif: 'open-sans';
@@ -9,6 +10,7 @@ $font-family-serif: 'open-sans';
 // sans-serif;
 $font-size-base: 1.4rem; // base on paragraphs in detail page
 // $line-height-base: 2.2;
+
 
 
 // add color to color maps
@@ -320,7 +322,7 @@ $h6-font-size: $font-size-base !default;
 $headings-margin-bottom: 0;
 $headings-font-family: inherit !default;
 $headings-font-weight: 500 !default;
-$headings-line-height: 1.43 !default;
+$headings-line-height: 1.428571429 !default;
 $headings-color: inherit !default;
 
 $display1-size: 6rem !default;

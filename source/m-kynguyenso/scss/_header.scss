@@ -1,0 +1,154 @@
+// ====================================
+// header style
+// ====================================
+/*
+* TOC
+*
+* header
+* search result stock
+*/
+// > GLOBAL Elements
+.header {
+  &__banner {
+    display: flex;
+    justify-content: space-between;
+    height: 94px;
+    align-items: center;
+
+    .logo {
+      background: url(../img/ky-nguyen-so-logo.png) 0/50% no-repeat;
+      width: 350px;
+      height: 79px;
+      display: block;
+    }
+
+    .logo-phapluat {
+      height: 25px;
+
+      a {
+        background: url(../img/logo-phapluat.png) no-repeat;
+        width: 77px;
+        height: 25px;
+        display: block;
+        float: right;
+      }
+    }
+
+    .main-search {
+      height: 60px;
+      margin-bottom: 10px;
+      background: #ffba26;
+      height: 34px;
+      width: 270px;
+      padding: 3px;
+      position: relative;
+
+      .search {
+        background: #ffba26;
+        border: 1px solid #fdd275;
+        width: 100%;
+        font-size: .9em;
+        padding-left: 5px;
+        height: 28px;
+
+        &::placeholder {
+          color: #333333;
+          font-size: 1.3rem;
+          font-family: 'open-sans';
+        }
+      }
+
+      .btn-search {
+        position: absolute;
+        right: 5px;
+        top: 7px;
+        background: none;
+        border: none;
+        padding: 0 5px;
+
+        i {
+          font-size: 18px;
+          color: #333;
+        }
+      }
+
+    }
+  }
+
+  &__navigation {
+    background: #f04e46;
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+    .menu {
+      display: flex;
+
+      li {
+        margin-right: 1px;
+
+        &:hover a {
+          background: #646464;
+          color: #fff;
+        }
+      }
+
+      a {
+        font-size: 16px;
+        color: #fff;
+        display: block;
+        padding: 0 20px;
+        line-height: 50px;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-family: 'open-sans-bold';
+      }
+    }
+
+    .home {
+      background: #646464;
+
+      i::before {
+        font-size: 25px;
+      }
+
+    }
+  }
+
+  .parents-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    .category a {
+      font-size: 18px;
+      line-height: 20px;
+      color: #fff;
+      text-transform: uppercase;
+      padding: 14px 10px;
+    }
+
+    .humburger {
+      padding: 9px 10px;
+      border: 1px solid #dddddd;
+      border-radius: 4px;
+      margin-right: 10px;
+
+      span {
+        display: block;
+        width: 22px;
+        height: 2px;
+        border-radius: 1px;
+        background-color: #cccccc;
+        margin-top: 4px;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+
+    }
+  }
+
+}

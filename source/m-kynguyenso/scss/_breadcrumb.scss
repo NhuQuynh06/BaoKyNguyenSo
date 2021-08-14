@@ -1,0 +1,18 @@
+// ====================================
+// Customize breadcrumbs
+// ====================================
+/*
+* TOC
+*
+* breadcrumb
+*/
+.breadcrumb {
+    padding: 3px 0 3px 10px;
+    border-left: 5px solid #f04e46;
+    margin-bottom: 10px;
+
+    .text {
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+}

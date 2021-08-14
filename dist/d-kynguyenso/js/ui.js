@@ -1,4 +1,4 @@
-$('.homepage .box-highlight .rank-1').slick({
+$('.section-homepage .box-highlight .rank-1').slick({
     dots: false,
     infinite: false,
     speed: 800,

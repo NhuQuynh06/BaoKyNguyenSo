@@ -16,7 +16,7 @@
         height: 40px;
         display: flex;
         position: relative;
-        box-shadow: 0 4px 2px -2px #8080804d;
+        box-shadow: 0 4px 2px -2px #EBEBEB;
     }
 
     li {
@@ -24,7 +24,7 @@
         margin-right: 1px;
 
         &.active {
-            // box-shadow: inset 0 3px 9px rgb(0 0 0 / 8%);
+            box-shadow: inset 0 3px 9px #e1e1e1;
         }
 
         a {

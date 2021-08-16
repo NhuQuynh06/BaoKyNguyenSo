@@ -50,8 +50,6 @@ body {
 // ==================================================================
 .box-highlight {
   .rank-1 {
-    margin-bottom: 10px;
-
     .story {
       position: relative;
 
@@ -85,7 +83,6 @@ body {
     height: 322px;
     border: 1px solid #ddd;
     padding: 0 20px;
-    margin-bottom: 10px;
 
     &__link {
       display: flex;
@@ -142,10 +139,14 @@ body {
     }
   }
 
+  .rank-2 {
+    margin-top: 10px;
+  }
+
 }
 
 .box-style-1 {
-  // margin-top: 30px;
+  margin-top: 30px;
 
   .box-heading {
     cursor: pointer;

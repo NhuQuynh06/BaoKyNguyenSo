@@ -12,18 +12,31 @@
   &__banner {
     display: flex;
     justify-content: space-between;
-    height: 94px;
+    height: 60px;
     align-items: center;
 
+    @media (min-width: 451px) {
+      height: 94px;
+    }
+
     .logo {
-      background: url(../img/ky-nguyen-so-logo.png) 0/50% no-repeat;
-      width: 350px;
-      height: 79px;
+      background: url(../img/ky-nguyen-so-logo.png) 0/100% no-repeat;
+      // width: 350px;
+      height: 60px;
       display: block;
+
+      @media (min-width: 451px) {
+        height: 69px;
+      }
     }
 
     .logo-phapluat {
       height: 25px;
+      display: none;
+
+      @media (min-width: 451px) {
+        display: block;
+      }
 
       a {
         background: url(../img/logo-phapluat.png) no-repeat;
@@ -39,7 +52,7 @@
       margin-bottom: 10px;
       background: #ffba26;
       height: 34px;
-      width: 270px;
+      // width: 270px;
       padding: 3px;
       position: relative;
 
@@ -54,7 +67,6 @@
         &::placeholder {
           color: #333333;
           font-size: 1.3rem;
-          font-family: 'open-sans';
         }
       }
 
@@ -77,41 +89,17 @@
 
   &__navigation {
     background: #f04e46;
-    height: 50px;
-    display: flex;
-    align-items: center;
+    height: 100%;
+    position: relative;
 
-    .menu {
-      display: flex;
-
-      li {
-        margin-right: 1px;
-
-        &:hover a {
-          background: #646464;
-          color: #fff;
-        }
-      }
-
+    .active {
       a {
-        font-size: 16px;
-        color: #fff;
-        display: block;
-        padding: 0 20px;
-        line-height: 50px;
-        text-transform: uppercase;
-        font-weight: 800;
-        font-family: 'open-sans-bold';
+        background: #646464;
       }
-    }
-
-    .home {
-      background: #646464;
 
       i::before {
         font-size: 25px;
       }
-
     }
   }
 
@@ -119,7 +107,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    height: 50px;
 
     .category a {
       font-size: 18px;
@@ -129,25 +117,45 @@
       padding: 14px 10px;
     }
 
-    .humburger {
-      padding: 9px 10px;
-      border: 1px solid #dddddd;
-      border-radius: 4px;
-      margin-right: 10px;
+  }
 
-      span {
-        display: block;
-        width: 22px;
-        height: 2px;
-        border-radius: 1px;
-        background-color: #cccccc;
-        margin-top: 4px;
+  .child-menu {
+    background: #f04e46;
+    width: 100%;
+    bottom: 0;
+    display: none;
+    padding-top: 10px;
+    border-top: 1px solid #e7e7e7;
 
-        &:first-child {
-          margin-top: 0;
-        }
-      }
+    a {
+      font-size: 16px;
+      color: #fff;
+      display: block;
+      padding: 0 20px;
+      line-height: 50px;
+      text-transform: uppercase;
+    }
 
+  }
+
+}
+
+.humburger {
+  padding: 9px 10px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  margin-right: 10px;
+
+  span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #cccccc;
+    margin-top: 4px;
+
+    &:first-child {
+      margin-top: 0;
     }
   }
 

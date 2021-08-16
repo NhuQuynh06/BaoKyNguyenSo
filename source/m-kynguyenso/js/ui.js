@@ -24,3 +24,8 @@ $(".nav-tab .nav-tab__link a").click(function (e) {
         .removeClass('active fadeInUp')
     $('.nav-tab .nav-tab__content .' + chosenTab).addClass('active fadeInUp');
 });
+
+// menu mobile 
+// $('.parents-menu .humburger').click(function () {
+//     $(".child-menu").toggle('slow');
+// })

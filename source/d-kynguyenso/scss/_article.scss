@@ -54,7 +54,7 @@
 
             .item {
                 font-weight: $font-weight-medium;
-                color: $primary;
+                color: $third;
                 font-size: 1.4rem;
                 text-transform: uppercase;
             }
@@ -73,7 +73,7 @@
                     content: '';
                     width: 4px;
                     height: 4px;
-                    background-color: $primary;
+                    background-color: $third;
                     border-radius: 100%;
                     display: block;
                     position: absolute;
@@ -170,7 +170,7 @@
             border-radius: 4px !important;
             background-color: #08854e !important;
             color: #fff !important;
-            background-color: $primary !important;
+            background-color: $third !important;
             color: $white !important;
             font-weight: $font-weight-normal !important;
             text-transform: initial !important;
@@ -446,7 +446,7 @@
                 text-align: right;
 
                 &:before {
-                    background-color: $primary;
+                    background-color: $third;
                     content: '';
                     width: 60px;
                     height: 3px;
@@ -563,9 +563,10 @@
 
         a {
             color: $gray-600;
+            font-weight: normal;
 
             &:hover {
-                color: $primary;
+                color: $third;
             }
         }
 
@@ -576,7 +577,7 @@
             align-items: center;
             width: 20px;
             height: 20px;
-            background-color: $gray-400;
+            background-color: #ced4da;
             margin-right: $spacer-1;
             border-radius: 3px;
 
@@ -603,7 +604,7 @@
             border-radius: 50%;
 
             &:hover {
-                background-color: $primary;
+                background-color: $third;
             }
         }
 
@@ -673,7 +674,7 @@
             border-radius: 50%;
 
             &:hover {
-                background-color: $primary;
+                background-color: $third;
             }
         }
 
@@ -855,7 +856,7 @@
                 font-size: 1.4rem;
                 font-weight: $font-weight-medium;
                 text-transform: uppercase;
-                color: $primary;
+                color: $third;
             }
 
             .story__heading {
@@ -1168,7 +1169,7 @@
 
             &:first-child {
                 margin-top: 0;
-                border-top: 8px solid $primary;
+                border-top: 8px solid $third;
                 padding-top: $spacer-3;
             }
         }
@@ -1194,8 +1195,8 @@
 
             .wrap-button {
                 .btn.btn-primary {
-                    background: $primary;
-                    border-color: $primary;
+                    background: $third;
+                    border-color: $third;
                 }
             }
         }
@@ -1246,7 +1247,7 @@
         }
 
         a {
-            // color: $primary;
+            // color: $third;
         }
 
         table img {
@@ -1419,6 +1420,11 @@
     .article {
         padding-right: 0;
 
+        header {
+            padding-right: 0;
+            padding-left: 0;
+        }
+
         // layout infographic
         table.picture {
             &[align="left"] {
@@ -1521,8 +1527,8 @@
         &__title,
         &__sapo,
         &__meta {
-            // text-align: center;
-            width: 660px;
+            text-align: center;
+            width: 960px;
             margin: $spacer-4 auto $spacer-2;
         }
 
@@ -1639,7 +1645,7 @@
         }
 
         &__title {
-            // margin-top: $spacer-5;
+            margin-top: $spacer-5;
         }
 
         .article-photo,
@@ -1674,12 +1680,12 @@
     }
 
 
-    .time {
-        color: #555;
-        width: 660px;
-        font-size: 1.4rem;
-        font-weight: 400;
-    }
+    // .time {
+    //     color: #555;
+    //     width: 660px;
+    //     font-size: 1.4rem;
+    //     font-weight: 400;
+    // }
 
     .chapter-breadcrumb {
         .breadcrumb-detail {
@@ -1751,8 +1757,8 @@
                     border-color: #ccc;
 
                     &:hover {
-                        background-color: $primary;
-                        border-color: $primary;
+                        background-color: $third;
+                        border-color: $third;
                     }
                 }
             }
@@ -1846,7 +1852,7 @@
     }
 
     .timeline-index {
-        width: 270px;
+        // width: 270px;
         background-color: #EEF6F8;
         padding: $spacer-5;
         padding-left: $spacer-6;
@@ -1859,10 +1865,11 @@
             font-size: 14px;
             position: relative;
             display: block;
+            font-weight: normal;
 
             time {
                 font-weight: bold;
-                color: $primary;
+                color: $third;
             }
 
             p {}
@@ -1912,7 +1919,8 @@
     }
 
     .live-content {
-        width: 660px;
+        // width: 660px;
+        width: 548px;
     }
 
     // --------
@@ -1987,7 +1995,7 @@
         }
 
         .video {
-            width: 659px;
+            width: 100%;
             overflow: hidden;
 
             video {
@@ -2010,7 +2018,7 @@
         }
 
         &.summary {
-            border-top: 1px solid $primary;
+            border-top: 1px solid $third;
 
             &:before {
                 display: none;
@@ -2023,7 +2031,7 @@
             }
 
             a {
-                color: $primary;
+                color: $third;
                 font-weight: 600;
             }
 
@@ -2083,7 +2091,7 @@
     @include clearfix();
 
     >.title {
-        font-size: 20px;
+        font-size: 18px;
         font-family: $font-family-serif;
         margin: 0 0 15px;
         font-weight: bold;
@@ -2138,6 +2146,7 @@
                     .title {
                         font-weight: bold;
                         font-size: 16px;
+                        color: $third;
                     }
 
                     .background {
@@ -2180,7 +2189,8 @@
 }
 
 .interview-content {
-    width: 660px;
+    // width: 660px;
+    width: 548px;
 }
 
 .inteview-context {
@@ -2230,7 +2240,7 @@
     }
 
     .video {
-        width: 545px;
+        // width: 545px;
         overflow: hidden;
         margin-left: auto;
 
@@ -2484,7 +2494,7 @@
 
                     .answer-title {
                         color: white;
-                        background-color: $primary;
+                        background-color: $third;
                     }
 
                     .icon--status {
@@ -2655,7 +2665,7 @@
 
         .label {
             text-transform: uppercase;
-            color: $primary;
+            color: $third;
             font-weight: bold;
         }
 
@@ -2669,7 +2679,7 @@
                 color: #070acc;
 
                 &:hover {
-                    color: $primary;
+                    color: $third;
                 }
 
                 &::before {
@@ -2792,7 +2802,7 @@
     .notification {
         padding: 12px;
         background: #F0F0F0;
-        border: 1px dashed $primary;
+        border: 1px dashed $third;
         font-style: italic;
         border-radius: 5px;
         margin-bottom: $spacer-5;
@@ -3028,7 +3038,7 @@
             line-height: 54px;
             float: left;
             margin-right: 8px;
-            color: $primary;
+            color: $third;
             padding: 0 4px;
         }
     }
@@ -3102,7 +3112,7 @@
                 color: #333;
 
                 &:hover {
-                    color: $primary;
+                    color: $third;
                 }
             }
         }
@@ -3237,7 +3247,6 @@
 
         .sapo {
             font-weight: bold;
-            @include bold();
         }
 
         .story {
@@ -3266,7 +3275,6 @@
 
         .cms-author {
             font-size: 14px;
-            @include bold();
             text-transform: uppercase;
         }
     }
@@ -3280,6 +3288,33 @@
             font-size: 18px;
             text-transform: uppercase;
             padding-bottom: 5px;
+        }
+
+        .box-content {
+            margin-left: 20px;
+        }
+
+        .story {
+            margin-top: 10px;
+
+            a {
+                padding-left: 15px;
+                font-weight: 400;
+                position: relative;
+                font-size: 14px;
+                font-weight: 800;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 50%;
+                    border: 1px solid #ccc;
+                    left: 0;
+                    top: 7px;
+                }
+            }
         }
     }
 

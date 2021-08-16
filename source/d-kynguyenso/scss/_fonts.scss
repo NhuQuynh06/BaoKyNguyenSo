@@ -6,25 +6,13 @@
 */
 
 @font-face {
-    font-family: 'open-sans-extraBold';
-    src: url('../fonts/Open-sans/OpenSans-ExtraBold.ttf');
-}
-@font-face {
-    font-family: 'open-sans-semiBold';
-    src: url('../fonts/Open-sans/OpenSans-SemiBold.ttf');
-}
-
-@font-face {
-    font-family: 'open-sans-bold';
+    font-family: 'open-sans';
     src: url('../fonts/Open-sans/OpenSans-Bold.ttf');
+    font-weight: 700;
 }
 
 @font-face {
     font-family: 'open-sans';
     src: url('../fonts/Open-sans/OpenSans-Regular.ttf');
-}
-
-@font-face {
-    font-family: 'open-sans-light';
-    src: url('../fonts/Open-sans/OpenSans-Light.ttf');
+    font-weight: 400;
 }

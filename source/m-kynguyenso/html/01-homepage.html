@@ -11,6 +11,9 @@
   <!-- Favicon -->
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="stylesheet" type="text/css" href="../styles/css/m-kynguyenso.css">
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
 </head>
 
 <body>
@@ -19,30 +22,30 @@
 
     <header class="header">
       <div class="container">
-        <div class="header__banner">
-          <h1><a class="logo" href=""></a></h1>
-          <!-- <div class="search">
+        <div class="header__banner row">
+          <h1 class="col-18"><a class="logo" href=""></a></h1>
+          <div class="search col-14">
             <h2 class="logo-phapluat"><a href=""></a></h2>
             <div class="main-search">
-              <input type="text" placeholder="Nhập từ khoá tìm kiếm" class="search">
+              <input type="text" placeholder="Ttìm kiếm" class="search">
               <button class="btn-search"><i class="far fa-search"></i></button>
             </div>
-          </div> -->
+          </div>
         </div>
       </div>
       <div class="header__navigation">
         <div class="container">
           <ul class="parents-menu">
             <li class="category"><a href="">Danh mục</a></li>
-            <li class="humburger">
+            <li class="humburger" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
               <span></span>
               <span></span>
               <span></span>
             </li>
           </ul>
-          <!-- <ul class="menu">
+          <ul class="child-menu" id="collapseExample">
             <li class="active home"><a href="/"><i class="fas fa-home-lg-alt"></i></a></li>
-
+  
             <li><a href="https://kynguyenso.plo.vn/ky-nguyen-so/nhip-cong-nghe/" title="Nhịp công nghệ">Nhịp công
                 nghệ</a>
             </li>
@@ -52,7 +55,7 @@
                 Online</a></li>
             <li><a href="https://kynguyenso.plo.vn/ky-nguyen-so/cong-nghe/" title="Công Nghệ 4.0">Công Nghệ 4.0</a></li>
             <li><a href="https://kynguyenso.plo.vn/ky-nguyen-so/xe-dien/" title="Xe Điện">Xe Điện</a></li>
-          </ul> -->
+          </ul>
         </div>
       </div>
     </header>
@@ -173,19 +176,22 @@
               </div>
               <div class="col-32 rank-2">
                 <article class="story">
-                  <h5 class="story__heading"><a href="03-article.html">'Dùng trước - Trả sau' không còn là đặc quyền của những người có điều kiện</a></h5>
+                  <h5 class="story__heading"><a href="03-article.html">'Dùng trước - Trả sau' không còn là đặc quyền của
+                      những người có điều kiện</a></h5>
                 </article>
                 <article class="story">
-                  <h5 class="story__heading"><a href="03-article.html">8 mẫu điện thoại Samsung được nhận bản cập nhật tháng 8</a></h5>
+                  <h5 class="story__heading"><a href="03-article.html">8 mẫu điện thoại Samsung được nhận bản cập nhật
+                      tháng 8</a></h5>
                 </article>
                 <article class="story">
-                  <h5 class="story__heading"><a href="03-article.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, repudiandae.</a></h5>
+                  <h5 class="story__heading"><a href="03-article.html">Lorem ipsum dolor sit amet consectetur
+                      adipisicing elit. Odio, repudiandae.</a></h5>
                 </article>
               </div>
             </div>
           </div>
-          <!-- <div class="box-style-1">
-            <div class="box-heading col-24">
+          <div class="box-style-1">
+            <div class="box-heading">
               <h3>
                 <a class="title" href="">
                   <img src="../figurations/site/smartphone.png" alt="">
@@ -194,7 +200,7 @@
               </h3>
             </div>
             <div class="box-content row">
-              <div class="col-16 rank-1">
+              <div class="col-32 rank-1">
                 <article class="story">
                   <figure class="story__thumb">
                     <a href="03-article.html"><img
@@ -207,21 +213,24 @@
                     voluptatibus!</div>
                 </article>
               </div>
-              <div class="col-8 rank-2">
+              <div class="col-32 rank-2">
                 <article class="story">
-                  <h5 class="story__heading"><a href="03-article.html">'Dùng trước - Trả sau' không còn là đặc quyền của những người có điều kiện</a></h5>
+                  <h5 class="story__heading"><a href="03-article.html">'Dùng trước - Trả sau' không còn là đặc quyền của
+                      những người có điều kiện</a></h5>
                 </article>
                 <article class="story">
-                  <h5 class="story__heading"><a href="03-article.html">8 mẫu điện thoại Samsung được nhận bản cập nhật tháng 8</a></h5>
+                  <h5 class="story__heading"><a href="03-article.html">8 mẫu điện thoại Samsung được nhận bản cập nhật
+                      tháng 8</a></h5>
                 </article>
                 <article class="story">
-                  <h5 class="story__heading"><a href="03-article.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, repudiandae.</a></h5>
+                  <h5 class="story__heading"><a href="03-article.html">Lorem ipsum dolor sit amet consectetur
+                      adipisicing elit. Odio, repudiandae.</a></h5>
                 </article>
               </div>
             </div>
           </div>
           <div class="box-style-1">
-            <div class="box-heading col-24">
+            <div class="box-heading">
               <h3>
                 <a class="title" href="">
                   <img src="../figurations/site/rocket.png" alt="">
@@ -230,7 +239,7 @@
               </h3>
             </div>
             <div class="box-content row">
-              <div class="col-16 rank-1">
+              <div class="col-32 rank-1">
                 <article class="story">
                   <figure class="story__thumb">
                     <a href="03-article.html"><img
@@ -243,21 +252,24 @@
                     voluptatibus!</div>
                 </article>
               </div>
-              <div class="col-8 rank-2">
+              <div class="col-32 rank-2">
                 <article class="story">
-                  <h5 class="story__heading"><a href="03-article.html">'Dùng trước - Trả sau' không còn là đặc quyền của những người có điều kiện</a></h5>
+                  <h5 class="story__heading"><a href="03-article.html">'Dùng trước - Trả sau' không còn là đặc quyền của
+                      những người có điều kiện</a></h5>
                 </article>
                 <article class="story">
-                  <h5 class="story__heading"><a href="03-article.html">8 mẫu điện thoại Samsung được nhận bản cập nhật tháng 8</a></h5>
+                  <h5 class="story__heading"><a href="03-article.html">8 mẫu điện thoại Samsung được nhận bản cập nhật
+                      tháng 8</a></h5>
                 </article>
                 <article class="story">
-                  <h5 class="story__heading"><a href="03-article.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, repudiandae.</a></h5>
+                  <h5 class="story__heading"><a href="03-article.html">Lorem ipsum dolor sit amet consectetur
+                      adipisicing elit. Odio, repudiandae.</a></h5>
                 </article>
               </div>
             </div>
           </div>
           <div class="box-style-1">
-            <div class="box-heading col-24">
+            <div class="box-heading">
               <h3>
                 <a class="title" href="">
                   <img src="../figurations/site/recycle.png" alt="">
@@ -266,7 +278,7 @@
               </h3>
             </div>
             <div class="box-content row">
-              <div class="col-16 rank-1">
+              <div class="col-32 rank-1">
                 <article class="story">
                   <figure class="story__thumb">
                     <a href="03-article.html"><img
@@ -279,21 +291,24 @@
                     voluptatibus!</div>
                 </article>
               </div>
-              <div class="col-8 rank-2">
+              <div class="col-32 rank-2">
                 <article class="story">
-                  <h5 class="story__heading"><a href="03-article.html">'Dùng trước - Trả sau' không còn là đặc quyền của những người có điều kiện</a></h5>
+                  <h5 class="story__heading"><a href="03-article.html">'Dùng trước - Trả sau' không còn là đặc quyền của
+                      những người có điều kiện</a></h5>
                 </article>
                 <article class="story">
-                  <h5 class="story__heading"><a href="03-article.html">8 mẫu điện thoại Samsung được nhận bản cập nhật tháng 8</a></h5>
+                  <h5 class="story__heading"><a href="03-article.html">8 mẫu điện thoại Samsung được nhận bản cập nhật
+                      tháng 8</a></h5>
                 </article>
                 <article class="story">
-                  <h5 class="story__heading"><a href="03-article.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, repudiandae.</a></h5>
+                  <h5 class="story__heading"><a href="03-article.html">Lorem ipsum dolor sit amet consectetur
+                      adipisicing elit. Odio, repudiandae.</a></h5>
                 </article>
               </div>
             </div>
           </div>
           <div class="box-style-1">
-            <div class="box-heading col-24">
+            <div class="box-heading">
               <h3>
                 <a class="title" href="">
                   <img src="../figurations/site/gamecontroller.png" alt="">
@@ -302,7 +317,7 @@
               </h3>
             </div>
             <div class="box-content row">
-              <div class="col-16 rank-1">
+              <div class="col-32 rank-1">
                 <article class="story">
                   <figure class="story__thumb">
                     <a href="03-article.html"><img
@@ -315,21 +330,24 @@
                     voluptatibus!</div>
                 </article>
               </div>
-              <div class="col-8 rank-2">
+              <div class="col-32 rank-2">
                 <article class="story">
-                  <h5 class="story__heading"><a href="03-article.html">'Dùng trước - Trả sau' không còn là đặc quyền của những người có điều kiện</a></h5>
+                  <h5 class="story__heading"><a href="03-article.html">'Dùng trước - Trả sau' không còn là đặc quyền của
+                      những người có điều kiện</a></h5>
                 </article>
                 <article class="story">
-                  <h5 class="story__heading"><a href="03-article.html">8 mẫu điện thoại Samsung được nhận bản cập nhật tháng 8</a></h5>
+                  <h5 class="story__heading"><a href="03-article.html">8 mẫu điện thoại Samsung được nhận bản cập nhật
+                      tháng 8</a></h5>
                 </article>
                 <article class="story">
-                  <h5 class="story__heading"><a href="03-article.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, repudiandae.</a></h5>
+                  <h5 class="story__heading"><a href="03-article.html">Lorem ipsum dolor sit amet consectetur
+                      adipisicing elit. Odio, repudiandae.</a></h5>
                 </article>
               </div>
             </div>
           </div>
           <div class="box-style-1">
-            <div class="box-heading col-24">
+            <div class="box-heading">
               <h3>
                 <a class="title" href="">
                   <img src="../figurations/site/profile.png" alt="">
@@ -338,7 +356,7 @@
               </h3>
             </div>
             <div class="box-content row">
-              <div class="col-16 rank-1">
+              <div class="col-32 rank-1">
                 <article class="story">
                   <figure class="story__thumb">
                     <a href="03-article.html"><img
@@ -351,28 +369,35 @@
                     voluptatibus!</div>
                 </article>
               </div>
-              <div class="col-8 rank-2">
+              <div class="col-32 rank-2">
                 <article class="story">
-                  <h5 class="story__heading"><a href="03-article.html">'Dùng trước - Trả sau' không còn là đặc quyền của những người có điều kiện</a></h5>
+                  <h5 class="story__heading"><a href="03-article.html">'Dùng trước - Trả sau' không còn là đặc quyền của
+                      những người có điều kiện</a></h5>
                 </article>
                 <article class="story">
-                  <h5 class="story__heading"><a href="03-article.html">8 mẫu điện thoại Samsung được nhận bản cập nhật tháng 8</a></h5>
+                  <h5 class="story__heading"><a href="03-article.html">8 mẫu điện thoại Samsung được nhận bản cập nhật
+                      tháng 8</a></h5>
                 </article>
                 <article class="story">
-                  <h5 class="story__heading"><a href="03-article.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, repudiandae.</a></h5>
+                  <h5 class="story__heading"><a href="03-article.html">Lorem ipsum dolor sit amet consectetur
+                      adipisicing elit. Odio, repudiandae.</a></h5>
                 </article>
               </div>
             </div>
-          </div> -->
+          </div>
         </div>
-        <div class="fb-like fb_iframe_widget" data-href="https://plo.vn/content/NjQyMjI1.html" data-send="false" data-width="300" data-show-faces="true" data-font="arial" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;container_width=560&amp;font=arial&amp;href=https%3A%2F%2Fplo.vn%2Fcontent%2FNjQyMjI1.html&amp;locale=vi_VN&amp;sdk=joey&amp;send=false&amp;show_faces=true&amp;width=300"><span style="vertical-align: bottom; width: 300px; height: 20px;"><iframe name="f24b117820a961" width="300px" height="1000px" data-testid="fb:like Facebook Social Plugin" title="fb:like Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v2.0/plugins/like.php?app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df82fe90017a044%26domain%3Dkynguyenso.plo.vn%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fkynguyenso.plo.vn%252Ff2d9ba752af8958%26relation%3Dparent.parent&amp;container_width=560&amp;font=arial&amp;href=https%3A%2F%2Fplo.vn%2Fcontent%2FNjQyMjI1.html&amp;locale=vi_VN&amp;sdk=joey&amp;send=false&amp;show_faces=true&amp;width=300" style="border: none; visibility: visible; width: 300px; height: 20px;" class=""></iframe></span></div>
       </div>
     </div>
     <!-- SITE FOOTER -->
-    <!-- <footer class="site-footer">
+    <footer class="site-footer">
       <div class="container">
         <ul class="menu-footer rank-1">
-          <li><a href="homepage.html"><i class="fas fa-home-lg-alt"></i></a></li>
+          <li class="humburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </li>
+          <!-- <li><a href="homepage.html"><i class="fas fa-home-lg-alt"></i></a></li>
 
           <li class="active"><a href="https://kynguyenso.plo.vn/ky-nguyen-so/nhip-cong-nghe/"
               title="Nhịp công nghệ">Nhịp
@@ -396,17 +421,17 @@
             </a>
             <a class="rss" href="/rss.html">
             </a>
-          </li>
+          </li> -->
         </ul>
-        <div class="row rank-2">
-          <div class="col-13">
+        <div class="rank-2">
+          <div>
             <div class="logo img-responsive">
               <h1><a href="/" title="Chuyên mục Kỷ Nguyên Số - Báo Pháp luật Thành phố Hồ Chí Minh">
                   <img src="https://static.plo.vn/kns/App_Themes/Images/ky-nguyen-so-logo.png"
                     alt="Chuyên mục Kỷ Nguyên Số" class="img-responsive"></a></h1>
             </div>
           </div>
-          <div class="copyright col-19 text-right">
+          <div class="copyright text-right">
             © Chuyên mục công nghệ Báo điện tử Pháp Luật Thành phố Hồ Chí Minh. Cơ quan chủ quản: Ủy ban Nhân dân Thành
             phố Hồ Chí Minh<br>
             Giấy phép số: 636/GP-BTTTT của Bộ Thông tin và Truyền thông cấp ngày 28-12-2020<br>
@@ -420,10 +445,24 @@
           </div>
         </div>
       </div>
-    </footer> -->
+    </footer>
+    <p>
+      <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+        Link with href
+      </a>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Button with data-target
+      </button>
+    </p>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+      </div>
+    </div>
   </div>
   <!-- JS Global Compulsory -->
   <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
   <script src="../js/slick.min.js"></script>
   <script src="../js/ui.js"></script>
 </body>

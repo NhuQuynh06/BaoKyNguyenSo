@@ -33,7 +33,7 @@ $white: #fff !default;
 $gray-100: #EDEDED !default;
 $gray-200: #F7F7F7 !default;
 $gray-300: #DDDDDD !default;
-$gray-400: #444444 !default;
+$gray-400: #ced4da !default;
 $gray-500: #333333 !default;
 $gray-600: #555555 !default;
 $gray-700: #495057 !default;
@@ -226,7 +226,7 @@ $container-max-widths: map-merge(( // sm: 540px,
 //
 // Set the number of columns and specify the width of the gutters.
 
-$grid-columns: 32 !default;
+$grid-columns: 24 !default;
 $grid-gutter-width: 20px !default;
 
 

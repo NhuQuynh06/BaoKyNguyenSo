@@ -20,6 +20,11 @@
       width: 350px;
       height: 79px;
       display: block;
+      margin-top: -5px;
+    }
+
+    .search {
+      padding-top: 4px;
     }
 
     .logo-phapluat {
@@ -35,7 +40,6 @@
     }
 
     .main-search {
-      height: 60px;
       margin-bottom: 10px;
       background: #ffba26;
       height: 34px;
@@ -48,8 +52,9 @@
         border: 1px solid #fdd275;
         width: 100%;
         font-size: .9em;
-        padding-left: 5px;
+        padding-left: 6px;
         height: 28px;
+        padding-bottom: 2px;
 
         &::placeholder {
           color: #333333;
@@ -68,7 +73,12 @@
 
         i {
           font-size: 18px;
-          color: #333;
+
+          &::before {
+            font-size: 18px;
+            color: #333;
+            font-weight: bold;
+          }
         }
       }
 
@@ -99,12 +109,19 @@
         line-height: 50px;
         text-transform: uppercase;
         font-weight: 800;
-        font-family: 'open-sans-bold';
       }
     }
 
     .home {
       background: #646464;
+      width: 68px;
+      position: relative;
+
+      i {
+        position: absolute;
+        bottom: 9px;
+        // right: 5px;
+      }
 
       i::before {
         font-size: 25px;

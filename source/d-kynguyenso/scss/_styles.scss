@@ -4,7 +4,7 @@
 body {
 
   a {
-    font-size: 14px;
+    // font-size: 14px;
     font-weight: 800;
 
     &:hover {
@@ -13,14 +13,73 @@ body {
   }
 }
 
-// mixin 
-@mixin bold {
-  font-family: 'open-sans-bold';
+.promo-full {
+  padding: 15px 0;
 }
 
-@mixin light {
-  font-family: 'open-sans-light';
+.list-grid {
+  .story__heading {
+    margin-top: .8rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+   .col-8 {
+    margin-top: 2.4rem;
+  }
 }
+
+// mixin
+@mixin box-heading-3 {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  // border-bottom: 3px solid $gray-800;
+  box-shadow: 0px 3px 0px $gray-800;
+  margin-bottom: $spacer-3;
+  width: 100%;
+
+  h2,
+  h3,
+  h4,
+  h5 {
+      margin: 0;
+      padding: 0;
+  }
+
+  .item {
+      display: inline-flex;
+      height: 40px;
+
+      a {
+          width: 100%;
+          display: flex;
+      }
+
+      span {
+          background-color: $gray-800;
+          display: inline-flex;
+          color: $white;
+          @include text-uppercase-1;
+          padding: $spacer-1 $spacer-2 2px;
+      }
+  }
+
+  hgroup {
+      display: inline-flex;
+  }
+
+  .sub-item {
+      font-size: 1.8rem;
+      height: 40px;
+      padding: $spacer-1 12px 2px;
+      text-transform: uppercase;
+
+      &.is-active {
+          font-weight: bold;
+      }
+  }
+}
+
 
 // slick prev, next
 .slick-next,
@@ -52,6 +111,7 @@ body {
   .rank-1 {
     .story {
       position: relative;
+      box-shadow: inset 0 3px 9px rgba(0, 0, 0, 0.008);
 
       &__heading {
         background: rgba(0, 0, 0, 0.5);
@@ -87,7 +147,7 @@ body {
 
     &__link {
       display: flex;
-      justify-content: center;
+      justify-content: left;
 
       a {
         border: none;
@@ -97,6 +157,8 @@ body {
         display: block;
         text-transform: uppercase;
         margin-right: 2px;
+        line-height: 1.428571429;
+        border: 1px solid transparent;
 
         &:hover {
           color: #f04e46;
@@ -108,6 +170,7 @@ body {
 
       .active {
         background-color: #ffba26;
+        border: none;
 
         &:hover {
           pointer-events: none;
@@ -123,6 +186,7 @@ body {
 
         .cms-link {
           padding: 8px 0;
+          font-size: 14px;
         }
       }
 
@@ -207,25 +271,30 @@ body {
       border-left: 1px solid #ddd;
 
       .story {
-        background: url(../img/icon.png) left 10px no-repeat;
+        background: url(../img/icon.png) left 13px no-repeat;
         border-top: 1px solid #ddd;
-        padding-top: 10px;
+        padding-top: 11px;
         padding-bottom: 10px;
-        padding-left: 30px;
+        padding-left: 31px;
 
         a {
           font-size: 14px;
           font-weight: 800;
-          @include bold();
         }
       }
 
       .story:first-child {
-        background: url(../img/icon.png) left 0 no-repeat;
+        background: url(../img/icon.png) left 3px no-repeat;
         padding-top: 0;
         border-top: 0;
       }
     }
+  }
+}
+
+.zone-1 {
+  .box-style-1:first-child {
+    margin-top: 0;
   }
 }
 
@@ -284,7 +353,7 @@ body {
 
       &__heading a {
         font-weight: 800;
-        @include bold();
+        font-size: 14px;
       }
     }
   }
@@ -351,7 +420,6 @@ body {
 
       &__heading a {
         font-weight: 800;
-        @include bold();
         font-size: 14px;
       }
 
@@ -371,6 +439,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 50px;
 
   ul {
     display: flex;
@@ -386,7 +455,6 @@ body {
     text-align: center;
     margin: 0 3px;
     color: #333;
-    @include bold();
 
     &:hover {
       background: #a89a7d;
@@ -442,6 +510,7 @@ body {
           padding-left: 15px;
           font-weight: normal;
           position: relative;
+          font-size: 14px;
 
           &::before {
             content: '';
@@ -456,5 +525,142 @@ body {
         }
       }
     }
+  }
+}
+
+.box-timeline-2 {
+  padding-right: $spacer-6;
+
+  .box-heading {
+      @include box-heading-3;
+      box-shadow: 0px 3px 0px $third;
+
+      .item span {
+          background-color: $third;
+      }
+  }
+
+  .box-content {
+      .story {
+          position: relative;
+          margin-top: $spacer-5;
+
+          .story__thumb {
+              width: 320px;
+              height: 190px;
+              float: left;
+              margin-right: $spacer-3;
+
+              img {}
+          }
+
+          .story__meta {
+              @include text-uppercase-3;
+
+              a {
+                  color: $gray-500;
+              }
+          }
+
+          .story__heading {
+              @include text-heading-1;
+              display: flex;
+              margin-bottom: $spacer-0;
+              border-top: 1px solid $border-color;
+              padding-top: $spacer-1;
+          }
+
+          .story__summary {
+              margin-top: $spacer-2;
+              color: $gray-700;
+          }
+
+          .story__refer {
+              .refer__heading {}
+          }
+      }
+
+      .story:first-of-type {
+          margin-top: 0;
+          padding-top: 0;
+          border-top: none;
+
+          .story__meta {
+              a {}
+          }
+      }
+  }
+}
+.more-story-3 {
+  margin-top: $spacer-6;
+  padding-top: $spacer-2;
+  padding-right: $spacer-5;
+
+  .box-heading {
+      font-size: 20px;
+      font-weight: $font-weight-bold;
+      border-top: 1px solid $border-color;
+      padding-top: $spacer-3;
+  }
+
+  .list-grid {
+      width: calc(100% + 32px);
+      margin-top: $spacer-3;
+  }
+
+  .story {
+      padding-right: $spacer-5;
+
+      &__type {
+          font-family: $font-family-serif;
+          color: $white;
+          @include text-heading-1;
+          position: absolute;
+          bottom: 12px;
+          left: 24px;
+          z-index: 10;
+      }
+
+      &__heading {
+          font-family: $font-family-serif;
+      }
+  }
+}
+
+.more-story-4 {
+  padding-top: $spacer-6;
+  margin-right: $spacer-5;
+
+  .box-heading {
+      @include box-heading-3;
+      width: 100%;
+      box-shadow: 0px 3px 0px $third;
+
+      .item span {
+          background-color: $third;
+      }
+  }
+
+  .list-grid {
+      width: calc(100% + 32px);
+      margin-top: $spacer-3;
+  }
+
+  .story {
+      padding-right: $spacer-5;
+
+      &__type {
+          font-family: $font-family-serif;
+          color: $white;
+          @include text-heading-1;
+          position: absolute;
+          bottom: 12px;
+          left: 24px;
+          z-index: 10;
+      }
+
+      &__heading {
+          font-family: $font-family-serif;
+      }
   }
 }

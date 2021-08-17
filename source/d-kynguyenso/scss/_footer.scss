@@ -16,7 +16,8 @@
         height: 40px;
         display: flex;
         position: relative;
-        box-shadow: 0 4px 2px -2px #EBEBEB;
+        // box-shadow: 0 4px 2px -2px #EBEBEB;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 5px rgba(0,0,0,0.08);
     }
 
     li {
@@ -24,7 +25,7 @@
         margin-right: 1px;
 
         &.active {
-            box-shadow: inset 0 3px 9px rgba(0,0,0, 0.08);
+            box-shadow: inset 0 3px 9px rgba(0, 0, 0, 0.08);
         }
 
         a {
@@ -61,6 +62,11 @@
 
         .btnsearch {
             padding: 8px 10px 8px 0;
+
+            i {
+                font-size: 18px;
+                font-weight: bold;
+            }
         }
 
         .rss,

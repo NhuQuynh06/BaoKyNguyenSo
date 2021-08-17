@@ -101,7 +101,7 @@
 
     &__thumb {
         a {
-            // display: flex;
+            display: flex;
             width: 100%;
             height: 100%;
             transition: transform .5s ease-out .1s;
@@ -109,7 +109,7 @@
 
         img {
             width: 100%;
-            // height: 100%;
+            height: 100%;
             object-fit: cover;
         }
 
